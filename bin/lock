@@ -1,0 +1,3 @@
+#!/bin/sh
+
+i3lock -efd -i ~/var/pictures/bg/Archbg_2_blur.png
