@@ -15,6 +15,7 @@ bin/srcman
 .config/*
 !.config/gtk-3.0/
 !.config/nitrogen/
+!.config/rncbc.org/
 !.config/terminator/
 !.config/user-dirs.dirs
 
