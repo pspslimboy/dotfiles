@@ -40,6 +40,7 @@ var/pictures/bg/*
 # Files
 !.gtkrc-2.0
 !.vimrc
+!.xbindkeysrc
 !.xinitrc
 !.Xmodmap
 !.zshrc
