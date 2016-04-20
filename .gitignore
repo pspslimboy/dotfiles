@@ -28,6 +28,8 @@ src/*
 src/srcman/*
 !src/srcman/.zshrc
 
+!.tuxguitar-1.3.2/
+
 !var/
 var/*
 !var/pictures/
