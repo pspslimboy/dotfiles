@@ -1,0 +1,6 @@
+#!/bin/sh
+
+#sudo mount /dev/sdc1 ~/mnt/storage
+#sudo mount /dev/sdc1 -t ntfs-3g -o uid=joshua,gid=joshua,dmask=022,fmask=133 ~/mnt/storage
+sudo mount /dev/sdc1 -t ntfs-3g -o uid=joshua,gid=joshua,dmask=022,fmask=022 ~/mnt/storage
+sudo mount /dev/sdb2 ~/mnt/more-storage
