@@ -4,7 +4,7 @@ i3-msg "workspace 3"
 #chromium-snapshot-bin --app=https://web.skype.com/en/ &
 skype &
 sleep 0.25
-terminator -e toxic &
+terminator -e toxic -T Toxic &
 sleep 0.25
 discord &
 sleep 0.25
