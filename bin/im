@@ -1,8 +1,11 @@
 #!/bin/sh
 
 i3-msg "workspace 3"
-chromium-snapshot-bin --app=https://web.skype.com/en/ &
+#chromium-snapshot-bin --app=https://web.skype.com/en/ &
+skype &
 sleep 0.25
 terminator -e toxic &
+sleep 0.25
+discord &
 sleep 0.25
 i3-msg "workspace 1"
