@@ -9,3 +9,4 @@ sleep 0.25
 discord &
 sleep 0.25
 i3-msg "workspace 1"
+i3-msg "workspace 3; layout tabbed"
