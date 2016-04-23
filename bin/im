@@ -3,10 +3,10 @@
 i3-msg "workspace 3"
 #chromium-snapshot-bin --app=https://web.skype.com/en/ &
 skype &
-sleep 0.25
+sleep 0.5
 terminator -e toxic -T Toxic &
-sleep 0.25
+sleep 0.5
 discord &
-sleep 0.25
 i3-msg "workspace 1"
 i3-msg "workspace 3; layout tabbed"
+i3-msg '[class="Skype" title="pspslimboy.dunn - Skype.*"] split h'
