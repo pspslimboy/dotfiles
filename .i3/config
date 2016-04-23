@@ -370,6 +370,7 @@ for_window [class="Terminator" title="Terminator Preferences"] floating enable
 for_window [class="qemu-system-*"] floating enable
 for_window [class="Lingot"] floating enable
 for_window [instance="web.skype.com__en"] floating disable
+for_window [instance="discordapp.com__channels_@me"] floating disable
 
 #for_window [class="auxhost64.exe"] floating disable layout tabbed
 #for_window [class="dssi-vst-server.exe"] floating disable layout tabbed
