@@ -17,6 +17,10 @@ bin/srcman
 !.config/nitrogen/
 !.config/rncbc.org/
 !.config/terminator/
+!.config/tox/
+.config/tox/*
+!.config/tox/toxic.conf
+
 !.config/user-dirs.dirs
 
 !.gitignore
