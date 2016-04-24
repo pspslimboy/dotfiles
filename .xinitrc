@@ -18,14 +18,22 @@
 	#	xrandr --output DVI-I-2 --auto --pos 3360x26
 	#else
 		# New 'Improved' Version
-		xrandr --output DVI-0 --off
-		xrandr --output DVI-1 --primary
-		xrandr --rate 120
-		#xrandr --setprovideroutputsource nouveau radeon
-		xrandr --setprovideroutputsource 1 0
-		xrandr --output DVI-0 --auto --left-of DVI-1
-		xrandr --output DVI-I-1-2 --auto --pos 3360x26
+		#xrandr --output DVI-0 --off
+		#xrandr --output DVI-1 --primary
+		#xrandr --rate 120
+		##xrandr --setprovideroutputsource nouveau radeon
+		#xrandr --setprovideroutputsource 1 0
+		#xrandr --output DVI-0 --auto --left-of DVI-1
+		#xrandr --output DVI-I-1-2 --auto --pos 3360x26
 	#fi
+
+# xf86-video-modesetting version
+xrandr --output DVI-D-1 --off
+xrandr --output DVI-I-1 --primary
+xrandr --rate 120
+xrandr --setprovideroutputsource 1 0
+xrandr --output DVI-D-1 --auto --left-of DVI-I-1
+xrandr --output DVI-I-2 --auto --pos 3360x26
 
 # If catalyst driver is detected, then run alternate script (rarely used)
 if lsmod | grep "fglrx" &> /dev/null ; then

@@ -307,7 +307,8 @@ mode "$mode_gaps_outer" {
 # finds out, if available)
 bar {
         status_command i3status -c ~/.i3/status.conf
-		output DVI-I-1-2
+		#output DVI-I-1-2
+		output DVI-I-2
         #tray_output primary
 
 		mode hide
@@ -331,8 +332,10 @@ bar {
 
 bar {
         status_command i3status -c ~/.i3/status.conf
-		output DVI-0
-		output DVI-1
+		#output DVI-0
+		#output DVI-1
+		output DVI-D-1
+		output DVI-I-1
         tray_output none
 
         mode hide
@@ -379,9 +382,12 @@ for_window [instance="discordapp.com__channels_@me"] floating disable
 #for_window [class="Skype"]
 for_window [class="Steam"] border pixel 1
 
-workspace 1 output DVI-1
-workspace 2 output DVI-0
-workspace 3 output DVI-I-1-2
+#workspace 1 output DVI-1
+#workspace 2 output DVI-0
+#workspace 3 output DVI-I-1-2
+workspace 1 output DVI-I-1
+workspace 2 output DVI-D-1
+workspace 3 output DVI-I-2
 
 bindsym $mod+Shift+F9 exec source ~/.xinitrc
 bindsym $mod+Shift+F11 exec xrandr --output DVI-I-1-2 --auto --pos 3360x26
