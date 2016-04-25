@@ -13,6 +13,8 @@ bin/srcman
 
 !.config/
 .config/*
+!.config/modprobed.db
+!.config/modprobed-db.conf
 !.config/gtk-3.0/
 !.config/nitrogen/
 !.config/rncbc.org/
