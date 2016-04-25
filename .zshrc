@@ -91,8 +91,8 @@ export SRC=~/src/srcman/
 
 export vblank_mode=0
 
-alias clippush="xclip -selection c"
-alias clippull="xclip -selection clipboard -o"
+alias xpush="xclip -selection c"
+alias xpull="xclip -selection clipboard -o"
 
 alias pconf="pacman-conf"
 alias pkgquery="package-query"
