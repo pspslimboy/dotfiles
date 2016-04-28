@@ -1,3 +1,4 @@
+#!/bin/bash
 xrandr --output DVI-D-1 --off
 xrandr --output DVI-I-1 --primary
 xrandr --rate 120
