@@ -82,7 +82,7 @@ source $ZSH/oh-my-zsh.sh
 #SRCMAN edit
 #clear && echo && screenfetch && echo
 
-export PATH=~/bin:$PATH
+[[ ":$PATH:" != *":$HOME/bin:"* ]] && PATH="$HOME/bin:${PATH}"
 export VISUAL=vim
 export EDITOR=vim
 #export ABSROOT=~/src/abs
