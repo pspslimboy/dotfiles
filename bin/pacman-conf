@@ -1,0 +1,16 @@
+#!/bin/bash
+
+case $1 in
+	testing | -t)
+		sudo ln -svf /etc/pacman-testing.conf /etc/pacman.conf;;
+	staging | -s)
+		sudo ln -svf /etc/pacman-staging.conf /etc/pacman.conf;;
+	llvm-svn | -l)
+		sudo ln -svf /etc/pacman-llvm-svn.conf /etc/pacman.conf;;
+	default | -d)
+		sudo ln -svf /etc/pacman-default.conf /etc/pacman.conf;;
+	*)
+		echo -e "\e[31mSyntax Error:\e[0m No configuration was specified or was invalid.";;
+esac
+
+# vim: se ts=2:sts=2:sw=2:noet
