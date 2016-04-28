@@ -57,4 +57,5 @@ var/pictures/bg/*
 !.xbindkeysrc
 !.xinitrc
 !.Xmodmap
+!.zprofile
 !.zshrc
