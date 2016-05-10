@@ -96,9 +96,11 @@ thermal
 tpm
 tpm_tis
 ttm
+uas
 usb_common
 usbcore
 usbhid
+usb_storage
 uvcvideo
 vfat
 video
