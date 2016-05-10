@@ -87,7 +87,7 @@ export EDITOR=vim
 #export ABSROOT=~/src/abs
 export TERMINAL=terminator
 export QT_STYLE_OVERRIDE=gtk
-export SRC=~/src/srcman/
+export SRC=~/.srcman/
 
 export vblank_mode=0
 
