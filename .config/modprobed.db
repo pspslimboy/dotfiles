@@ -4,7 +4,6 @@ aes_x86_64
 ahci
 amd_iommu_v2
 amdkfd
-asus_wmi
 atkbd
 battery
 button
@@ -17,7 +16,6 @@ cryptd
 drm
 drm_kms_helper
 edac_core
-eeepc_wmi
 ehci_hcd
 ehci_pci
 evdev
@@ -38,7 +36,6 @@ i8042
 ie31200_edac
 input_leds
 intel_powerclamp
-intel_rapl
 ip_tables
 irqbypass
 iTCO_vendor_support
