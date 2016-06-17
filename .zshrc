@@ -84,6 +84,7 @@ clear && echo && screenfetch && echo
 [[ ":$PATH:" != *":$HOME/bin:"* ]] && PATH="$HOME/bin:${PATH}"
 export VISUAL=vim
 export EDITOR=vim
+export KEYTIMEOUT=1
 #export ABSROOT=~/src/abs
 export TERMINAL=terminator
 export QT_STYLE_OVERRIDE=gtk
