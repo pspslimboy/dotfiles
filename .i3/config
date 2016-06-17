@@ -423,4 +423,6 @@ bindsym XF86AudioMute exec pulseaudio-ctl mute
 bindsym XF86AudioRaiseVolume exec pulseaudio-ctl up
 bindsym XF86AudioLowerVolume exec pulseaudio-ctl down
 
+bindsym $mod+z exec pactl set-source-mute alsa_input.usb-046d_081b_01D3B710-02.analog-mono toggle; exec notify-send "Mute toggled."
+
 # vim:filetype=i3
