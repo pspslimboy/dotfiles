@@ -99,9 +99,7 @@ alias pconf="pacman-conf"
 alias pkgquery="package-query"
 alias pkgq="package-query"
 
-#srcman () { . ~/bin/srcman; }
-
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Prevents ZSH slowdowns on very large git projects
 # function git_prompt_info() {

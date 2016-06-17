@@ -100,7 +100,7 @@ alias pconf="pacman-conf"
 alias pkgquery="package-query"
 alias pkgq="package-query"
 
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export PS1="(%{$fg[green]%}SRCMAN%{$reset_color%}) $PS1"
 
