@@ -64,11 +64,12 @@ client.urgent 			#FFCB21  $yellow $white $red
 #client.urgent 			#FFCB21  $yellow $white $red
 
 exec nitrogen --restore
-exec compton -cCfb -D 5 -r 0 -o 0.25 -l 7 -t 7 --shadow-exclude 'class_i = "dmenu"'
+exec compton -cCfb -D 5 -r 0 -o 0.25 -l 7 -t 7 --shadow-exclude 'class_i = "dmenu"' --shadow-exclude 'class_i = "i3-frame"'
 exec dunst -fn "Terminus 8" -geometry "0+10+10"
 
 bindsym $mod+Shift+F7 exec killall -9 compton
-bindsym $mod+Shift+F8 exec compton -cCfb -D 5 -r 0 -o 0.25 -l 7 -t 7 --shadow-exclude 'class_i = "dmenu"'
+bindsym $mod+Shift+F8 exec compton -cCfb -D 5 -r 0 -o 0.25 -l 7 -t 7 --shadow-exclude 'class_i = "dmenu"' --shadow-exclude 'class_i = "i3-frame"'
+
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
