@@ -2,7 +2,7 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/joshua/.gtkrc-2.0.mine"
-gtk-theme-name="FlatStudioDark"
+gtk-theme-name="oomox-googleblue"
 gtk-icon-theme-name="Flattr Dark"
 gtk-font-name="Terminus 8"
 gtk-cursor-theme-name="Breeze_Hacked"
@@ -15,5 +15,5 @@ gtk-enable-event-sounds=1
 gtk-enable-input-feedback-sounds=1
 gtk-xft-antialias=1
 gtk-xft-hinting=1
-gtk-xft-hintstyle="hintfull"
+gtk-xft-hintstyle="hintmedium"
 gtk-xft-rgba="rgb"
