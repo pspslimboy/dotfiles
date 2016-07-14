@@ -1,0 +1,2 @@
+#!/bin/bash
+python2 $HOME/src/BingRewards/main.py
