@@ -22,6 +22,7 @@ bin/srcman
 !.config/tox/
 .config/tox/*
 !.config/tox/toxic.conf
+!.config/mpv/
 
 !.config/user-dirs.dirs
 
