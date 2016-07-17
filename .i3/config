@@ -86,7 +86,7 @@ bindsym $mod+Shift+F8 exec compton -cCfb -D 5 -r 0 -o 0.25 -l 7 -t 7 --shadow-ex
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec termite
 bindsym $mod+Shift+Return exec chromium-continuous-bin
 bindsym $mod+Ctrl+Shift+Return exec chromium-snapshot-bin
 bindsym $mod+Shift+p exec pavucontrol
