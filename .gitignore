@@ -25,6 +25,7 @@ bin/srcman
 !.config/mpv/
 !.config/cava/
 !.config/termite/
+!.config/Cadence/
 
 !.config/user-dirs.dirs
 
