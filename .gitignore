@@ -23,6 +23,7 @@ bin/srcman
 .config/tox/*
 !.config/tox/toxic.conf
 !.config/mpv/
+!.config/cava/
 
 !.config/user-dirs.dirs
 
