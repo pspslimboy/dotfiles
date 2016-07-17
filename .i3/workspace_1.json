@@ -1,0 +1,25 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 1,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 978,
+       "width": 793,
+       "x": 1726,
+       "y": 46
+    },
+    "name": "GNUman's Domain - Chromium",
+    "percent": 1,
+    "swallows": [
+       {
+       "class": "^\\/usr\\/bin\\/chromium\\-snapshot\\-bin$"
+       // "instance": "^\\/usr\\/bin\\/chromium\\-snapshot\\-bin$",
+       // "title": "^GNUman\\'s\\ Domain\\ \\-\\ Chromium$",
+       // "transient_for": "^$",
+       // "window_role": "^browser$"
+       }
+    ],
+    "type": "con"
+}
+

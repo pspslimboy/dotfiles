@@ -1,0 +1,89 @@
+// vim:ts=4:sw=4:et
+{
+    // tabbed split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "tabbed",
+    "percent": 0.75,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 978,
+               "width": 1608,
+               "x": 1716,
+               "y": 36
+            },
+            "name": "Google Chrome",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^google\\-chrome$"
+               // "title": "^GNUman\\'s\\ Domain\\ \\-\\ Google\\ Chrome$",
+               // "transient_for": "^$",
+               // "window_role": "^browser$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // splitv split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.25,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 306,
+               "width": 482,
+               "x": 0,
+               "y": 0
+            },
+            "name": "lyvi",
+            "percent": 0.638167938931298,
+            "swallows": [
+               {
+               "class": "^Termite$",
+               // "instance": "^terminator$",
+               "title": "^lyvi$"
+               // "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 90,
+               "width": 162,
+               "x": 0,
+               "y": 0
+            },
+            "name": "cava",
+            "percent": 0.361832061068702,
+            "swallows": [
+               {
+               "class": "^URxvt$",
+               // "instance": "^terminator$",
+               "title": "^cava$"
+               // "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

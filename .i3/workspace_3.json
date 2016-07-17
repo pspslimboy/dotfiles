@@ -1,0 +1,58 @@
+// vim:ts=4:sw=4:et
+{
+    // tabbed split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "tabbed",
+    "percent": null,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 600,
+               "width": 800,
+               "x": 1920,
+               "y": 225
+            },
+            "name": "Skype",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Ghetto\\ Skype$"
+               // "instance": "^ghetto\\ skype$",
+               // "title": "^Skype$",
+               // "transient_for": "^$",
+               // "window_role": "^browser\\-window$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 750,
+               "width": 900,
+               "x": 1870,
+               "y": 150
+            },
+            "name": "Discord",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Discord$"
+               // "instance": "^discord$",
+               // "title": "^Discord$",
+               // "transient_for": "^$",
+               // "window_role": "^browser\\-window$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
