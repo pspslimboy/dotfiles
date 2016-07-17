@@ -1,4 +1,6 @@
 [global_config]
+  dbus = True
+  enabled_plugins = ,
   geometry_hinting = False
   inactive_color_offset = 1.0
 [keybindings]
