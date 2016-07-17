@@ -1,3 +1,6 @@
+" Disable 256 colors
+set t_Co=16
+
 " Enable filetype plugin
 filetype plugin on
 
