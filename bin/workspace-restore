@@ -12,10 +12,11 @@ restore-wkspace1() {
 restore-wkspace2() {
 	i3-msg "workspace 2; append_layout ~/.i3/workspace_2.json"
 	urxvt -title cava -fn "xft:Terminus:pixelsize=8" -e cava &
-	termite -t lyvi -e lyviwait &
+	#termite -t lyvi -e lyviwait &
 	google-chrome-stable &
 	xdotool search --sync --onlyvisible --class "google-chrome" windowfocus
 	spotify &
+	urxvt -title lyvi -e lyviwait &
 	#terminator -T cava -p cava -e cava &
 	#sleep 5
 	#i3-msg "workspace 2"
