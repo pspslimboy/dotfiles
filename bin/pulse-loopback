@@ -1,0 +1,4 @@
+#!/bin/bash
+pactl load-module module-null-sink sink_name=Virtual1
+pacmd update-sink-proplist Virtual1 device.description=CavaSink
+pactl load-module module-loopback latency_msec=100 sink=Virtual1
