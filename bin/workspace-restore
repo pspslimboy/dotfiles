@@ -16,6 +16,7 @@ restore-wkspace2() {
 	google-chrome-stable &
 	xdotool search --sync --onlyvisible --class "google-chrome" windowfocus
 	spotify &
+	xdotool search --sync --onlyvisible --class "Spotify"
 	urxvt -title lyvi -e lyviwait &
 	#terminator -T cava -p cava -e cava &
 	#sleep 5
@@ -41,7 +42,7 @@ case $1 in
 	;;
 	all)
 		restore-wkspace2
-		xdotool search --sync --onlyvisible --class "Spotify"
+		xdotool search --sync --onlyvisible --name "lyvi"
 		restore-wkspace3
 		xdotool search --sync --onlyvisible --class "Ghetto Skype"
 		xdotool search --sync --onlyvisible --class "Discord"
