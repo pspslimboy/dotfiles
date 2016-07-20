@@ -47,6 +47,9 @@ case $1 in
 		xdotool search --sync --onlyvisible --class "Ghetto Skype"
 		xdotool search --sync --onlyvisible --class "Discord"
 		restore-wkspace1
+		xdotool search --sync --onlyvisible --class "/usr/bin/chromium-snapshot-bin"
+		killall -9 compton
+		compton --config ~/.config/compton.conf -b
 	;;
 esac
 
