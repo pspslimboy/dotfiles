@@ -326,8 +326,7 @@ mode "$mode_gaps_outer" {
 # finds out, if available)
 bar {
         status_command i3status -c ~/.i3/status.conf
-		output DVI-I-1-2
-        #tray_output primary
+        tray_output primary
 
 		mode hide
 		hidden_state hide
@@ -346,32 +345,6 @@ bar {
     		inactive_workspace	#414141 $darkg $lightg
     		urgent_workspace 	#FFCB21 $yellow $white
 		}
-}
-
-bar {
-        status_command i3status -c ~/.i3/status.conf
-		output DVI-0
-		output DVI-1
-        tray_output none
-
-        mode hide
-        hidden_state hide
-        modifier $mod2
-        position top
-
-        colors {
-            # <bar>
-            background $darkg
-			#background #00000000
-            separator $lightg
-            statusline $white
-
-            # <workclass>      <border> <bg> <text>
-            focused_workspace   #4183F6 $blue $white
-            active_workspace    #414141 $darkg $white
-            inactive_workspace  #414141 $darkg $lightg
-            urgent_workspace    #FFCB21 $yellow $white
-        }
 }
 
 # force floating for all new windows
@@ -399,13 +372,7 @@ for_window [title="Kerbal Space Program"] floating enable
 #for_window [class="Skype"]
 for_window [class="Steam"] border pixel 1
 
-workspace 1 output DVI-1
-workspace 2 output DVI-0
-workspace 3 output DVI-I-1-2
-
 bindsym $mod+Shift+F9 exec source ~/.xinitrc
-bindsym $mod+Shift+F11 exec xrandr --output DVI-I-1-2 --auto --pos 3360x26
-bindsym $mod+Shift+F12 exec xrandr --output DVI-I-1-2 --off
 
 assign [class="Skype"] 3
 assign [class="qTox"] 3
