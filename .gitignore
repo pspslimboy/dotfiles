@@ -34,6 +34,8 @@ bin/srcman
 
 !.i3/
 
+!.icons/
+
 #!src/
 #src/*
 #!src/srcman/
