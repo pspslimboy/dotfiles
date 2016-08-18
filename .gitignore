@@ -59,6 +59,8 @@ var/pictures/bg/*
 !var/pictures/bg/Archbg_2_blur.png
 !var/pictures/bg/Archbg_1080.png
 !var/pictures/bg/Archbg_1080_blur.png
+!var/pictures/bg/Archbg.svg
+!var/pictures/bg/Archbg_1080.svg
 
 # Files
 !.gtkrc-2.0
