@@ -326,7 +326,6 @@ mode "$mode_gaps_outer" {
 # finds out, if available)
 bar {
         status_command i3status -c ~/.i3/status.conf
-        tray_output primary
 
 		mode hide
 		hidden_state hide
