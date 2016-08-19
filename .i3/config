@@ -373,11 +373,6 @@ for_window [class="Steam"] border pixel 1
 
 bindsym $mod+Shift+F9 exec source ~/.xinitrc
 
-assign [class="Skype"] 3
-assign [class="qTox"] 3
-assign [class="utox"] 3
-assign [instance="discordapp.com__channels_@me"] 3
-
 no_focus [class="Skype"]
 
 # move current workspace between monitors
