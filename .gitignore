@@ -69,6 +69,7 @@ var/pictures/bg/*
 !.vimrc
 !.xbindkeysrc
 !.xinitrc
+!.xinitrc-gnome
 !.Xmodmap
 !.zprofile
 !.zshrc
