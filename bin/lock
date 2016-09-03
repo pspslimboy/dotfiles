@@ -1,5 +1,6 @@
 #!/bin/sh
 
+xrotate normal
 i3lock -fd -i ~/var/pictures/bg/Archbg_1080_blur.png
 sleep 0.5
 systemctl suspend
