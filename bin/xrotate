@@ -3,21 +3,25 @@
 rotate_left() {
 	xrandr --output LVDS1 --rotate left
 	xinput set-prop 11 "Coordinate Transformation Matrix" 0 -1 1 1 0 0 0 0 1
+	feh --bg-center ~/var/pictures/bg/Archbg_1920.png
 }
 
 rotate_right() {
 	xrandr --output LVDS1 --rotate right
 	xinput set-prop 11 "Coordinate Transformation Matrix" 0 1 0 -1 0 1 0 0 1
+	feh --bg-center ~/var/pictures/bg/Archbg_1920.png
 }
 
 rotate_inverted() {
 	xrandr --output LVDS1 --rotate inverted
 	xinput set-prop 11 "Coordinate Transformation Matrix" -1 0 1 0 -1 1 0 0 1
+	feh --bg-center ~/var/pictures/bg/Archbg_1080.png
 }
 
 rotate_normal() {
 	xrandr --output LVDS1 --rotate normal
 	xinput set-prop 11 "Coordinate Transformation Matrix" 1 0 0 0 1 0 0 0 1
+	feh --bg-center ~/var/pictures/bg/Archbg_1080.png
 }
 
 case $1 in
