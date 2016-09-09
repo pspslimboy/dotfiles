@@ -4,9 +4,7 @@ import subprocess
 import re
 import logging
 
-DELAY = 0.1
-SCREEN_HEIGHT = 1080
-PERCENT_LIMIT = 0.022
+DELAY = 0.25
 SHOW_CMD = 'i3-msg "bar hidden_state show"'
 HIDE_CMD = 'i3-msg "bar hidden_state hide"'
 
@@ -23,7 +21,7 @@ hidden = True
 subprocess.call(HIDE_CMD, shell=True)
 while True:
     y = get_y_position()
-    on_edge = y < SCREEN_HEIGHT * PERCENT_LIMIT
+    on_edge = y < 25
     logging.info("Got height %d. On edge: %s", y, str(on_edge))
     if on_edge and hidden:
         subprocess.call(SHOW_CMD, shell=True)
