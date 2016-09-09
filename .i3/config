@@ -11,6 +11,7 @@
 
 set $mod Mod4
 set $mod2 Mod3
+set $mod3 Mod1
 
 #exec setxkbmap -option caps:super
 exec xmodmap ~/.Xmodmap
@@ -217,6 +218,48 @@ bindsym $mod2+Shift+d move container to workspace d
 bindsym $mod2+Shift+z move container to workspace z
 bindsym $mod2+Shift+x move container to workspace x
 bindsym $mod2+Shift+c move container to workspace c
+
+# switch to workspace
+bindsym $mod3+1 workspace 1
+bindsym $mod3+2 workspace 2
+bindsym $mod3+3 workspace 3
+bindsym $mod3+4 workspace 4
+bindsym $mod3+5 workspace 5
+bindsym $mod3+6 workspace 6
+bindsym $mod3+7 workspace 7
+bindsym $mod3+8 workspace 8
+bindsym $mod3+9 workspace 9
+bindsym $mod3+0 workspace 10
+bindsym $mod3+q workspace q
+bindsym $mod3+w workspace w
+bindsym $mod3+e workspace e
+bindsym $mod3+a workspace a
+bindsym $mod3+s workspace s
+bindsym $mod3+d workspace d
+bindsym $mod3+z workspace z
+bindsym $mod3+x workspace x
+bindsym $mod3+c workspace c
+
+# move focused container to workspace
+bindsym $mod3+Shift+1 move container to workspace 1
+bindsym $mod3+Shift+2 move container to workspace 2
+bindsym $mod3+Shift+3 move container to workspace 3
+bindsym $mod3+Shift+4 move container to workspace 4
+bindsym $mod3+Shift+5 move container to workspace 5
+bindsym $mod3+Shift+6 move container to workspace 6
+bindsym $mod3+Shift+7 move container to workspace 7
+bindsym $mod3+Shift+8 move container to workspace 8
+bindsym $mod3+Shift+9 move container to workspace 9
+bindsym $mod3+Shift+0 move container to workspace 10
+bindsym $mod3+Shift+q move container to workspace q
+bindsym $mod3+Shift+w move container to workspace w
+bindsym $mod3+Shift+e move container to workspace e
+bindsym $mod3+Shift+a move container to workspace a
+bindsym $mod3+Shift+s move container to workspace s
+bindsym $mod3+Shift+d move container to workspace d
+bindsym $mod3+Shift+z move container to workspace z
+bindsym $mod3+Shift+x move container to workspace x
+bindsym $mod3+Shift+c move container to workspace c
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
