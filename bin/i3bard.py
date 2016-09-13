@@ -10,7 +10,6 @@ HIDE_CMD = 'i3-msg "bar hidden_state hide"'
 
 logging.basicConfig(level=logging.INFO)
 
-
 def get_y_position():
     xdotool_output = subprocess.check_output(
         'xdotool getmouselocation --shell',
@@ -22,8 +21,9 @@ subprocess.call(HIDE_CMD, shell=True)
 while True:
     y = get_y_position()
     on_edge = y < 25
-    logging.info("Got height %d. On edge: %s", y, str(on_edge))
-    if on_edge and hidden:
+    on_very_edge = y == 1
+    logging.info("Got height %d. On edge: %s. Very edge: %s.", y, str(on_edge), str(on_very_edge))
+    if on_very_edge and hidden:
         subprocess.call(SHOW_CMD, shell=True)
         hidden = False
     elif (not on_edge) and (not hidden):
