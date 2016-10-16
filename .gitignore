@@ -73,6 +73,7 @@ var/pictures/bg/*
 !.xinitrc
 !.xinitrc-gnome
 !.Xmodmap
+!.xserverrc
 !.zprofile
 !.zshrc
 !.Xresources
