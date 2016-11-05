@@ -36,6 +36,13 @@ bin/srcman
 
 !.icons/
 
+!.local/
+.local/*
+!.local/share/
+.local/share/*
+!.local/share/onboard/
+
+
 #!src/
 #src/*
 #!src/srcman/
