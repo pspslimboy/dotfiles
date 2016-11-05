@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#VOLTS="$(awk '{print $1*10^-6}' /sys/class/power_supply/BAT0/voltage_now)"
+#AMPS="$(awk '{print $1*10^-6}' /sys/class/power_supply/BAT0/current_now)"
+
+#WATTS="$(awk '{print $VOLTS*$AMPS}')"
+
+#echo $VOLTS
+#echo $AMPS
+#echo $WATTS
+
+echo - | awk "{printf \"%.1f\", \
+$(( \
+  $(cat /sys/class/power_supply/BAT0/current_now) * \
+  $(cat /sys/class/power_supply/BAT0/voltage_now) \
+)) / 10^12 }"

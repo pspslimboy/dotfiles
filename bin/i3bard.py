@@ -20,8 +20,8 @@ hidden = True
 subprocess.call(HIDE_CMD, shell=True)
 while True:
     y = get_y_position()
-    on_edge = y < 25
-    on_very_edge = y == 1
+    on_edge = y < 35
+    on_very_edge = y < 5
     logging.info("Got height %d. On edge: %s. Very edge: %s.", y, str(on_edge), str(on_very_edge))
     if on_very_edge and hidden:
         subprocess.call(SHOW_CMD, shell=True)

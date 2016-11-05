@@ -65,6 +65,9 @@ var/pictures/bg/*
 !var/pictures/bg/Archbg_1080.svg
 !var/pictures/bg/Archbg_1920.svg
 !var/pictures/bg/Archbg_1920.png
+!var/pictures/bg/Manjarobg_1080.png
+!var/pictures/bg/Manjarobg_1080_blur.png
+!var/pictures/bg/Manjarobg_1920.png
 
 # Files
 !.gtkrc-2.0

@@ -42,3 +42,6 @@ set hlsearch
 
 " Show current command
 set showcmd
+
+" Set common clipboard
+set clipboard=unnamed

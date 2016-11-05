@@ -14,11 +14,12 @@ set $mod2 Mod3
 set $mod3 Mod1
 
 #exec setxkbmap -option caps:super
-exec xmodmap ~/.Xmodmap
-exec xbindkeys
-exec unclutter
-exec python3 ~/bin/i3bard.py
-exec onboard
+exec --no-startup-id feh --bg-fill --no-fehbg ~/var/pictures/bg/Manjarobg_1080.png
+exec --no-startup-id xmodmap ~/.Xmodmap
+exec --no-startup-id xbindkeys
+exec --no-startup-id unclutter
+exec --no-startup-id python3 ~/bin/i3bard.py
+exec --no-startup-id onboard
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -56,22 +57,27 @@ set $bluelight #539cff
 set $lightg2   #6d6d6d
 
 # <clientclass>			<border> <bg>    <text> <indicator>
-client.focused          $blue    $blue   $white $bluelight
-client.focused_inactive #414141  $darkg  $white $darkg
-client.unfocused        #414141  $darkg  $white $darkg
-client.urgent 			#FFCB21  $yellow $white $red
+#client.focused          $blue    $blue   $white $bluelight
+#client.focused_inactive #414141  $darkg  $white $darkg
+#client.unfocused        #414141  $darkg  $white $darkg
+#client.urgent 			#FFCB21  $yellow $white $red
+
+client.focused          #16a085 #16a085 #ffffff #6febd3 #16a085 
+client.focused_inactive #454947 #454947 #16a085 #454948 #454947
+client.unfocused        #454947 #454947 #16a085 #454948 #454947
+client.urgent           #cb4b16 #fdf6e3 #16a085 #268bd2 #fdf6e3
+client.placeholder      #000000 #0c0c0c #ffffff #000000 #0c0c0c
 
 #client.focused          #4183F6  $blue   $white $red
 #client.focused_inactive #C1C1C1  $lightg $white $green
 #client.unfocused        #414141  $darkg  $white $lightg
 #client.urgent 			#FFCB21  $yellow $white $red
 
-exec nitrogen --restore
-exec compton --config ~/.config/compton.conf -b
-exec dunst -fn "Terminus 12" -geometry "0+10+10"
+exec --no-startup-id compton --config ~/.config/compton.conf -b
+exec --no-startup-id dunst -fn "Terminus 12" -geometry "0+10+10"
 
-bindsym $mod+Shift+F7 exec killall -9 compton
-bindsym $mod+Shift+F8 exec compton --config ~/.config/compton.conf -b
+bindsym $mod+Shift+F7 exec --no-startup-id killall -9 compton
+bindsym $mod+Shift+F8 exec --no-startup-id compton --config ~/.config/compton.conf -b
 
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -90,14 +96,14 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec termite
-bindsym $mod+Shift+Return exec chromium-snapshot-bin
+bindsym $mod+Shift+Return exec chromium
 bindsym $mod+Shift+p exec pavucontrol
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run -sb \#4183f6 -nb \#1d1f21 -sf \#ffffff -nf \#c5c8c6 -fn "Terminus-12:normal"
+bindsym $mod+d exec --no-startup-id dmenu_run -sb \#16a085 -nb \#2c2c2c -sf \#f3f5f3 -nf \#16a085 -fn "Terminus-12:normal"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -371,6 +377,7 @@ mode "$mode_gaps_outer" {
 # finds out, if available)
 bar {
         status_command i3status -c ~/.i3/status.conf
+		#status_command i3blocks -c ~/.i3/blocks.conf
 
 		mode hide
 		hidden_state hide
@@ -379,17 +386,42 @@ bar {
 
 		colors {
 	    	# <bar>
-   			background $darkg
-    		separator $lightg
-    		statusline $white
+   			background #2c2c2c
+    		separator #bcbcbc
+    		statusline #f3f5f3
 
     		# <workclass>      <border> <bg> <text>
-    		focused_workspace 	#4183F6 $blue $white
-    		active_workspace 	#414141 $darkg $white
-    		inactive_workspace	#414141 $darkg $lightg
-    		urgent_workspace 	#FFCB21 $yellow $white
+    		focused_workspace 	#16a085 #16a085 #f3f5f3
+    		active_workspace 	#454947 #454947 #f3f5f3
+    		inactive_workspace	#454947 #454947 #bcbcbc
+    		urgent_workspace 	#edcc65 #edcc65 #ffffff
 		}
 }
+
+#bar {
+#        #status_command i3status -c ~/.i3/status.conf
+#		status_command i3blocks -c ~/.i3/blocks.conf
+#
+#		mode hide
+#		hidden_state hide
+#		modifier $mod2
+#		position bottom
+#		tray_output none
+#		workspace_buttons no
+#
+#		colors {
+#	    	# <bar>
+#   			background #2c2c2c
+#    		separator #bcbcbc
+#    		statusline #f3f5f3
+#
+#    		# <workclass>      <border> <bg> <text>
+#    		focused_workspace 	#16a085 #16a085 #f3f5f3
+#    		active_workspace 	#454947 #454947 #f3f5f3
+#    		inactive_workspace	#454947 #454947 #bcbcbc
+#    		urgent_workspace 	#edcc65 #edcc65 #ffffff
+#		}
+#}
 
 # force floating for all new windows
 # for_window [class="[.]*"] floating enable
@@ -416,7 +448,7 @@ for_window [title="Kerbal Space Program"] floating enable
 #for_window [class="Skype"]
 for_window [class="Steam"] border pixel 1
 
-bindsym $mod+Shift+F9 exec source ~/.xinitrc
+bindsym $mod+Shift+F9 exec --no-startup-id source ~/.xinitrc
 
 no_focus [class="Skype"]
 
@@ -434,12 +466,19 @@ bindsym $mod+v split h
 bindsym $mod+Shift+s sticky toggle
 
 # Media keys
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
-bindsym XF86AudioStop exec playerctl stop
-bindsym XF86AudioMute exec pulseaudio-ctl mute
-bindsym XF86AudioRaiseVolume exec pulseaudio-ctl up
-bindsym XF86AudioLowerVolume exec pulseaudio-ctl down
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+bindsym XF86AudioStop exec --no-startup-id playerctl stop
+bindsym XF86AudioMute exec --no-startup-id pulseaudio-ctl mute
+bindsym XF86AudioRaiseVolume exec --no-startup-id pulseaudio-ctl up
+bindsym XF86AudioLowerVolume exec --no-startup-id pulseaudio-ctl down
+
+bindsym $mod+Shift+equal exec --no-startup-id xbacklight -inc 1
+bindsym $mod+Shift+minus exec --no-startup-id xbacklight -dec 1
+bindsym $mod+Shift+9 exec --no-startup-id xbacklight -dec 5
+bindsym $mod+Shift+0 exec --no-startup-id xbacklight -inc 5
+
+bindsym $mod+Shift+x exec --no-startup-id xmodmap ~/.Xmodmap
 
 # vim:filetype=i3
